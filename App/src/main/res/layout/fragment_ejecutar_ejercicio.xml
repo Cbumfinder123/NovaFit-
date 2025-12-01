@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/txtProgreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 / 8"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardImagen"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:layout_constraintTop_toBottomOf="@id/txtProgreso">
+
+            <com.cibertec.novafit.ui.ZoomableImageView
+                android:id="@+id/imgEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/error" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Press de banca con barra"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/cardImagen" />
+
+
+        <LinearLayout
+            android:id="@+id/llInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/txtNombre">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Series"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary" />
+
+                <TextView
+                    android:id="@+id/txtSeries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/protein" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary" />
+
+                <TextView
+                    android:id="@+id/txtReps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8-12"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/carb" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descanso"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary" />
+
+                <TextView
+                    android:id="@+id/txtDescanso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="90 seg"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/calories" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llTemporizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/llInfo">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱️ Descanso"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent" />
+
+            <TextView
+                android:id="@+id/txtTemporizador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90 seg"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/progressDescanso"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:max="100"
+                android:progress="100"
+                android:layout_marginTop="16dp"
+                android:progressTint="@color/primary" />
+        </LinearLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardNotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="#E3F2FD"
+            app:layout_constraintTop_toBottomOf="@id/llTemporizador">
+
+            <TextView
+                android:id="@+id/txtNotas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="💡 Mantén la espalda pegada al banco"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <LinearLayout
+            android:id="@+id/llBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/cardNotas"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <Button
+                android:id="@+id/btnSaltarDescanso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏭️ Saltar Descanso"
+                android:textSize="16sp"
+                android:backgroundTint="@color/accent"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp" />
+
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completar Serie"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/primary"
+                android:padding="16dp"
+                android:layout_marginBottom="8dp" />
+
+
+            <Button
+                android:id="@+id/btnSaltarEjercicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏭️ Saltar este Ejercicio"
+                android:textSize="16sp"
+                android:backgroundTint="#FFC107"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="8dp" />
+
+
+            <Button
+                android:id="@+id/btnAnterior"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⬅️ Ejercicio Anterior"
+                android:textSize="16sp"
+                android:backgroundTint="@color/gray_light"
+                android:textColor="@color/text_primary"
+                android:visibility="gone"
+                android:layout_marginBottom="8dp" />
+
+
+            <Button
+                android:id="@+id/btnCancelarRutina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🛑 Cancelar Rutina"
+                android:textSize="16sp"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 MI SEGUIMIENTO"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="#FF5722">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔥 RACHA ACTUAL"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:id="@+id/txtRacha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 días"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/txtRachaDescripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empieza tu racha hoy"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📅 ESTE MES"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_dark"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/txtDiasMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 / 30 días entrenados"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_primary"
+                    android:layout_marginBottom="8dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressMes"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="@color/protein" />
+
+                <TextView
+                    android:id="@+id/txtPorcentajeMes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0%"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/protein"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏆 RÉCORDS PERSONALES"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_dark"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/txtRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aún no tienes récords"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📋 ÚLTIMOS ENTRENAMIENTOS"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_dark"
+                    android:layout_marginBottom="12dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="400dp">
+
+                    <TextView
+                        android:id="@+id/txtUltimosEntrenamientos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No hay entrenamientos registrados"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:lineSpacingExtra="6dp" />
+                </ScrollView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

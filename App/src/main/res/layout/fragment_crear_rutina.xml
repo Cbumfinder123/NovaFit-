@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Rutina Personalizada"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configura tu rutina de entrenamiento"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Card: Días de entrenamiento -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Cuántos días entrenarás?"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_dark"
+                    android:paddingBottom="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgDias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb3dias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3 días por semana"
+                        android:textSize="16sp"
+                        android:checked="true"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb4dias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4 días por semana"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb5dias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5 días por semana"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb6dias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6 días por semana"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb7dias"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="7 días por semana"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="¿Dónde entrenarás?"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/primary_dark"
+                    android:paddingBottom="12dp" />
+
+                <RadioGroup
+                    android:id="@+id/rgLugar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbCasaSinEquipamiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🏠 Casa sin equipamiento (solo peso corporal)"
+                        android:textSize="16sp"
+                        android:checked="true"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbCasaConEquipamiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🏠 Casa con equipamiento (mancuernas, bandas)"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/rbGym"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="🏋️ Gimnasio (equipamiento completo)"
+                        android:textSize="16sp"
+                        android:padding="8dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:cardBackgroundColor="#E3F2FD">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ℹ️"
+                    android:textSize="24sp"
+                    android:paddingEnd="12dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tu rutina se ajustará automáticamente según tu perfil, objetivo y nivel de experiencia."
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnCrearRutina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear Rutina"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

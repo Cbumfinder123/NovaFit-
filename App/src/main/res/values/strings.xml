@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nova Fit</string>
+    <string name="empezar">Empezar</string>
+    <string name="guardar">Guardar</string>
+    <string name="perfil_guardado">Perfil guardado correctamente</string>
+    <string name="completa_campos">Completa todos los campos</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="finalizar">Finalizar registro</string>
+    <string name="objetivo_prompt">Selecciona tu objetivo</string>
+    <string name="nivel_actividad_prompt">Selecciona tu nivel de actividad</string>
+    <string name="tipo_cuerpo_prompt">Selecciona tu tipo de cuerpo</string>
+    <string name="nivel_experiencia_prompt">Selecciona tu nivel de experiencia</string>
+    <string name="mi_dieta_semanal">Mi Dieta Semanal</string>
+    <string name="editar_dieta">Editar dieta</string>
+    <string name="volver">Volver</string>
+    <string name="lista_de_dias">Lista de días de la dieta</string>
+    <string name="mi_rutina_semanal">Mi Rutina Semanal</string>
+    <string name="editar_rutina">Editar Rutina</string>
+</resources>

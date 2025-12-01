@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgFondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@android:color/transparent">
+
+        <Button
+            android:id="@+id/btnEmpezar"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Empezar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"
+            app:cornerRadius="30dp"
+            android:elevation="0dp"
+            android:letterSpacing="0.05" />
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/gray_light"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtNombreComida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desayuno"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary" />
+
+            <TextView
+                android:id="@+id/txtHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="08:00"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/txtCalorias"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="700 kcal"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/calories" />
+
+            <TextView
+                android:id="@+id/txtProteinas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35g P"
+                android:textSize="16sp"
+                android:textColor="@color/protein" />
+
+            <TextView
+                android:id="@+id/txtGrasas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20g G"
+                android:textSize="16sp"
+                android:textColor="@color/fat"
+                android:layout_marginStart="8dp" />
+
+            <TextView
+                android:id="@+id/txtCarbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90g C"
+                android:textSize="16sp"
+                android:textColor="@color/carb" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAlimentos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Huevos: 300 g\nAguacate: 100 g\nPapa: 50 g"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

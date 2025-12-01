@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="objetivos">
+        <item>Perder grasa</item>
+        <item>Ganar músculo</item>
+        <item>Mantener</item>
+    </string-array>
+    <string-array name="niveles_actividad">
+        <item>Sedentario</item>
+        <item>Ligero</item>
+        <item>Moderado</item>
+        <item>Activo</item>
+        <item>Muy activo</item>
+    </string-array>
+    <string-array name="tipos_cuerpo">
+        <item>Ectomorfo</item>
+        <item>Mesomorfo</item>
+        <item>Endomorfo</item>
+    </string-array>
+    <string-array name="niveles_experiencia">
+        <item>Principiante</item>
+        <item>Intermedio</item>
+        <item>Avanzado</item>
+    </string-array>
+</resources>

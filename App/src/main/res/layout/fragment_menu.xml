@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/header_gradient"
+        android:paddingTop="32dp"
+        android:paddingBottom="24dp"
+        android:paddingHorizontal="24dp"
+        android:elevation="4dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_men"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NovaFit"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, [Nombre]"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:rowCount="3"
+                android:alignmentMode="alignMargins">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardCalcular"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgc"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Calcular Macros" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|start"
+                        android:padding="20dp"
+                        android:background="@drawable/gradient_overlay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calcular"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Macros"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:alpha="0.9" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardDieta"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgd"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Mi Dieta" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|start"
+                        android:padding="20dp"
+                        android:background="@drawable/gradient_overlay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mi Dieta"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardRutina"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgr"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Rutina" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|start"
+                        android:padding="20dp"
+                        android:background="@drawable/gradient_overlay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rutina"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardEmpezarRutina"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imge"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Empezar Rutina" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|start"
+                        android:padding="20dp"
+                        android:background="@drawable/gradient_overlay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Empezar"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardSeguimiento"
+                    android:layout_width="0dp"
+                    android:layout_height="180dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/imgs"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Seguimiento" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="bottom|start"
+                        android:padding="20dp"
+                        android:background="@drawable/gradient_overlay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Seguimiento"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:shadowColor="#80000000"
+                            android:shadowDx="0"
+                            android:shadowDy="2"
+                            android:shadowRadius="4" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

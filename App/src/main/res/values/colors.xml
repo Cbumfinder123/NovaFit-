@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#00C853</color>
+    <color name="purple_700">#00A344</color>
+    <color name="teal_200">#69F0AE</color>
+    <color name="teal_700">#00BFA5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#00C853</color>
+    <color name="primary_dark">#00A344</color>
+    <color name="primary_light">#69F0AE</color>
+    <color name="accent">#00E676</color>
+    <color name="background">#F1F8F4</color>
+    <color name="text_primary">#004D40</color>
+    <color name="text_secondary">#00695C</color>
+    <color name="gray_light">#E0F2F1</color>
+    <color name="calories">#FF5722</color>
+    <color name="protein">#00C853</color>
+    <color name="fat">#FFC107</color>
+    <color name="carb">#2196F3</color>
+</resources>

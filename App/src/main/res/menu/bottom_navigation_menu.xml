@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_perfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_perfil"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_config"
+        android:title="Configuración"
+        android:icon="@drawable/ic_config"
+        app:showAsAction="ifRoom" />
+</menu>
